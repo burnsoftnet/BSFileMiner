@@ -1,0 +1,2 @@
+# BSFileMiner
+The File miner application will allow you to select a Drive or Folder and search all files ( or selected file extensions ) for certain keywords and display it in the results window.  A handy tool if you have to search every file on a computer or file share for key documents or files that contain any of the key word(s) in the search group.  This application can be used for the regular person that needs to look for a document, or a security analyst that needs to gather and search information from a machine or server.
