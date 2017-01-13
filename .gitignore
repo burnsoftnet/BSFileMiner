@@ -16,28 +16,7 @@ xcuserdata
 # svn & cvs
 .svn
 CVS
-FileMiner/bin/Debug/DocumentFormat.OpenXml.dll
-FileMiner/bin/Debug/DocumentFormat.OpenXml.xml
-FileMiner/bin/Debug/FileMiner_Results___Mac_Home_Documents_docs_Sunday_January_08_2017.log
-FileMiner/bin/Debug/FileMiner_Results___Mac_Home_Documents_Sunday_January_08_2017.log
-FileMiner/bin/Debug/fileminer.debug.log
-FileMiner/bin/Debug/fileminer.err.log
-FileMiner/bin/Debug/FileMiner.exe
-FileMiner/bin/Debug/FileMiner.exe.config
-FileMiner/bin/Debug/fileminer.mdb
-FileMiner/bin/Debug/FileMiner.pdb
-FileMiner/bin/Debug/itextsharp.dll
-FileMiner/bin/Debug/itextsharp.xml
-FileMiner/bin/Debug/Microsoft.Office.Interop.Word.dll
-FileMiner/obj/x86/Debug/FileMiner.exe
-FileMiner/obj/x86/Debug/FileMiner.frmAddSearchString.resources
-FileMiner/obj/x86/Debug/FileMiner.frmMain.resources
-FileMiner/obj/x86/Debug/FileMiner.frmViewList.resources
-FileMiner/obj/x86/Debug/FileMiner.pdb
-FileMiner/obj/x86/Debug/FileMiner.Resources.resources
-FileMiner/obj/x86/Debug/FileMiner.vbproj.FileListAbsolute.txt
-FileMiner/obj/x86/Debug/FileMiner.vbproj.GenerateResource.Cache
-FileMiner/obj/x86/Debug/FileMiner.vbproj.ResolveComReference.cache
-FileMiner/obj/x86/Debug/FileMiner.vbprojResolveAssemblyReference.cache
-FileMiner/bin/Debug/FileMiner_Results___Mac_Home_Documents_Source_Code_Visual Studio 2015_Projects_Beta_BSFileMiner_Sunday_January_08_2017.log
-FileMiner/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+FileMiner/bin/Debug/*.*
+FileMiner/obj/x86/Debug/*.*
+FileMiner/obj/x86/Release/*.*
+FileMiner/obj/x86/Release/TempPE/*.*
