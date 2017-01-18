@@ -21,3 +21,4 @@ FileMiner/obj/x86/Debug/*.*
 FileMiner/obj/x86/Release/*.*
 FileMiner/obj/x86/Release/TempPE/*.*
 BSFileMiner_Install/images/Thumbs.db
+FileMiner/obj/x86/Debug/TempPE/*.*
