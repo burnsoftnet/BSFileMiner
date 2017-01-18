@@ -67,6 +67,12 @@ Public Class frmMain
 
         Return bAns
     End Function
+    ''' <summary>
+    ''' Combine the Search strings relating to the selected category and format the string in a Regular expression format
+    ''' Then Compair it to the Contents and return the word/words that matchup in the file.
+    ''' </summary>
+    ''' <param name="sContents"></param>
+    ''' <returns>String</returns>
     Function GetWordsFound(sContents As String) As String
         Dim sAns As String = ""
         Try
@@ -80,7 +86,6 @@ Public Class frmMain
             RS = CMD.ExecuteReader
             While RS.Read
                 sWord = RS("SearchString")
-                ' If ContentsExistRegex(sContents, "^.*\b(" & sWord & ")\b.*$") Then
                 If ContentsExistRegex(sContents, sWord & "[^ ,]*") Then
                     If sTemp.Length = 0 Then
                         sTemp = sWord
@@ -99,11 +104,15 @@ Public Class frmMain
         End Try
         Return sAns
     End Function
+    ''' <summary>
+    ''' Excel 2007 Processing
+    ''' </summary>
+    ''' <param name="sFile"></param>
+    ''' <returns>String</returns>
     Function OpenFileAsExcel(sFile As String) As String
-        'Excel 2007 Processing
         Dim sAns As String = ""
         Try
-            Dim spreadsheetDocument As SpreadsheetDocument = spreadsheetDocument.Open(sFile, False)
+            Dim spreadsheetDocument As SpreadsheetDocument = SpreadsheetDocument.Open(sFile, False)
             Dim workbookPart As WorkbookPart = spreadsheetDocument.WorkbookPart
             Dim shareStringPart As SharedStringTablePart = workbookPart.SharedStringTablePart
             Dim paragraphText As New StringBuilder()
@@ -119,25 +128,32 @@ Public Class frmMain
         End Try
         Return sAns
     End Function
+    ''' <summary>
+    ''' Word 2007 Processing
+    ''' </summary>
+    ''' <param name="sFile"></param>
+    ''' <returns>String</returns>
     Function OpenFileAsWordProcessing(sFile As String) As String
-        'Word 2007 Processing
         Dim sAns As String = ""
         Try
             Dim stream As Stream = File.Open(sFile, FileMode.Open)
-            Dim wordprocessingDocument As WordprocessingDocument = wordprocessingDocument.Open(stream, False)
+            Dim wordprocessingDocument As WordprocessingDocument = WordprocessingDocument.Open(stream, False)
             Dim body As Body = wordprocessingDocument.MainDocumentPart.Document.Body
             sAns = body.InnerText.ToString
             wordprocessingDocument.Close()
             wordprocessingDocument = Nothing
         Catch ex As Exception
             ListBox2.Items.Add(sFile & " " & Err.Description)
-            'sAns = OpenFileAsWordOlder(sFile)
             Call ErrorFound("OpenFileAsWordProcessing" & sFile & " " & vbTab & Err.Number & vbTab & ex.Message.ToString)
         End Try
         Return sAns
     End Function
+    ''' <summary>
+    ''' Word 2003 Processing and maybe older
+    ''' </summary>
+    ''' <param name="sFile"></param>
+    ''' <returns>String</returns>
     Function OpenFileAsWordOlder(sFile As String) As String
-        'Word 2003 Processing and maybe older
         Dim sAns As String = ""
         Try
             Dim objApp As Microsoft.Office.Interop.Word.Application
@@ -155,8 +171,12 @@ Public Class frmMain
         End Try
         Return sAns
     End Function
+    ''' <summary>
+    ''' PDF Processing
+    ''' </summary>
+    ''' <param name="sFile"></param>
+    ''' <returns></returns>
     Function OpenFileAsPDF(sFile As String) As String
-        'PDF Processing
         Dim sAns As String = ""
         Try
             Dim oReader As New iTextSharp.text.pdf.PdfReader(sFile)
@@ -188,11 +208,14 @@ Public Class frmMain
         End Try
         Return sAns
     End Function
+    ''' <summary>
+    '''  Process the list of files found in the directory
+    ''' </summary>
+    ''' <param name="targetDirectory"></param>
     Public Sub ProcessDirectory(ByVal targetDirectory As String)
         Call BuggerMe("Started Processing " & targetDirectory)
         Try
             Dim fileEntries As String() = Directory.GetFiles(targetDirectory, txtFileFormat.Text)
-            ' Process the list of files found in the directory. 
             Dim TempStr(1) As String
             Dim TempNode As ListViewItem
             Dim fileName As String

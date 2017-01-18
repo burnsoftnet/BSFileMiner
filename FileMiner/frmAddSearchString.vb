@@ -13,7 +13,7 @@ Public Class frmAddSearchString
             Dim sString As String = ObjOF.FC(TextBox1.Text)
             Dim CID As Long = cmdSearchList.SelectedValue
             Dim SQL As String = "INSERT INTO SearchStrings (SearchString, SCID) VALUES('" & sString & "'," & CID & ")"
-            If Not Obj.StringExists(sString) Then
+            If Not Obj.StringExists(sString, CID) Then
                 Obj.ConnExec(SQL)
             Else
                 MsgBox(sString & " already exists!")
