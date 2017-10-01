@@ -11,3 +11,5 @@ Microsoft .Net 4.0 ( if running Windows 7/8 or 10 then it is OK)
 <h2>Quick Users Guide</h2>
 
 Check out the <a href="https://github.com/burnsoftnet/BSFileMiner/blob/master/Docs/About%20the%20File%20Miner.pdf">About the File Miner.pdf</a> in the Docs folder to see how to use this application.
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSW8XEMQVH4BE)]
