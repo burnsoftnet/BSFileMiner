@@ -78,7 +78,7 @@ Public Class frmMain
         Try
             Dim Obj As New Database
             Dim sTemp As String = ""
-            Call Obj.ConnectDB()
+            Call Obj.ConnectDb()
             Dim SQL As String = "SELECT * from SearchStrings where SCID=" & cmbSearchList.SelectedValue
             Dim sWord As String = ""
             Dim CMD As New Odbc.OdbcCommand(SQL, Obj.Conn)
@@ -97,7 +97,7 @@ Public Class frmMain
             RS.Close()
             RS = Nothing
             CMD = Nothing
-            Obj.CloseDB()
+            Obj.CloseDb()
             sAns = sTemp
         Catch ex As Exception
             Call ErrorFound("GetWordsFound" & vbTab & Err.Number & vbTab & ex.Message.ToString)

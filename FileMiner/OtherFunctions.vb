@@ -11,7 +11,7 @@ Public Class OtherFunctions
         Dim sAns As String = ""
         Dim MyValue As String = ""
         Dim Obj As New Database
-        Call Obj.ConnectDB()
+        Call Obj.ConnectDb()
         Dim SQL As String = "SELECT * from SearchStrings where SCID=" & lCATID
         Dim CMD As New OdbcCommand(SQL, Obj.Conn)
         Dim RS As OdbcDataReader
@@ -27,7 +27,7 @@ Public Class OtherFunctions
         RS.Close()
         RS = Nothing
         CMD = Nothing
-        Obj.CloseDB()
+        Obj.CloseDb()
         'sAns = "^.*\b(" & sAns & ")\b.*$"
         'sAns = "^.*\b(" & sAns & ")\b.*$"
         Return sAns
@@ -36,7 +36,7 @@ Public Class OtherFunctions
         Dim lAns As Long = 0
         Dim Obj As New Database
         Dim SQL As String = "SELECT * from SearchCategory where SearchName='" & sName & "'"
-        Call Obj.ConnectDB()
+        Call Obj.ConnectDb()
         Dim CMD As New OdbcCommand(SQL, Obj.Conn)
         Dim RS As OdbcDataReader
         RS = CMD.ExecuteReader
@@ -46,7 +46,7 @@ Public Class OtherFunctions
         RS.Close()
         RS = Nothing
         CMD = Nothing
-        Obj.CloseDB()
+        Obj.CloseDb()
         Obj = Nothing
         Return lAns
     End Function

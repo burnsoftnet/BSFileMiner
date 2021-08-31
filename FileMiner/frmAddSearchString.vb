@@ -1,10 +1,27 @@
 ﻿Imports FileMiner.Database
+''' <summary>
+''' Class frmAddSearchString.
+''' Implements the <see cref="System.Windows.Forms.Form" />
+''' </summary>
+''' <seealso cref="System.Windows.Forms.Form" />
 Public Class frmAddSearchString
+    ''' <summary>
+    ''' The l cat
+    ''' </summary>
     Public lCAT As Long
+    ''' <summary>
+    ''' Handles the Click event of the Button2 control.
+    ''' </summary>
+    ''' <param name="sender">The source of the event.</param>
+    ''' <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
     End Sub
-
+    ''' <summary>
+    ''' Handles the Click event of the Button1 control.
+    ''' </summary>
+    ''' <param name="sender">The source of the event.</param>
+    ''' <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             If TextBox1.TextLength = 0 Then Exit Sub
