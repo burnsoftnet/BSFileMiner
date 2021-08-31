@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Looks through the selected path to search all file contents to see if it contains any of the selected strings.")>
 <Assembly: AssemblyCompany("BurnSoft, www.burnsoft.net")>
 <Assembly: AssemblyProduct("FileMiner")>
-<Assembly: AssemblyCopyright("Copyright © BurnSoft, www.burnsoft.net, www.burnsoft.org 2013-2017")>
+<Assembly: AssemblyCopyright("Copyright © BurnSoft, www.burnsoft.net, www.burnsoft.org 2013-2021")>
 <Assembly: AssemblyTrademark("Copyright © BurnSoft, www.burnsoft.net, www.burnsoft.org")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.5.250")>
-<Assembly: AssemblyFileVersion("1.0.5.250")>
+<Assembly: AssemblyVersion("1.0.6.1")>
+<Assembly: AssemblyFileVersion("1.0.6.1")>
