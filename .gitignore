@@ -22,3 +22,6 @@ FileMiner/obj/x86/Release/*.*
 FileMiner/obj/x86/Release/TempPE/*.*
 BSFileMiner_Install/images/Thumbs.db
 FileMiner/obj/x86/Debug/TempPE/*.*
+.vs/FileMiner/v16/.suo
+.vs/FileMiner/v16/TestStore/0/000.testlog
+.vs/FileMiner/v16/TestStore/0/testlog.manifest
