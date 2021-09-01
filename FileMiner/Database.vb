@@ -58,7 +58,7 @@ Public Class Database
         End Try
     End Sub
     ''' <summary>
-    ''' Function to return the querey back in a datatable format
+    ''' Function to return the query back in a data table format
     ''' </summary>
     ''' <param name="sql"></param>
     ''' <param name="sError"></param>
@@ -78,7 +78,7 @@ Public Class Database
         Return table
     End Function
     ''' <summary>
-    ''' Checks to see if a string already exists in the searchstring table.
+    ''' Checks to see if a string already exists in the search string table.
     ''' </summary>
     ''' <param name="sValue"></param>
     ''' <param name="scid"></param>

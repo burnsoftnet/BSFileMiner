@@ -27,11 +27,11 @@ Public Class FrmMain
     ''' </summary>
     Public ErrorFile As String
     ''' <summary>
-    ''' The usedebug
+    ''' The use debug
     ''' </summary>
     Public Usedebug As Boolean
     ''' <summary>
-    ''' The useerror
+    ''' The use error
     ''' </summary>
     Public Useerror As Boolean
     ''' <summary>
@@ -99,7 +99,7 @@ Public Class FrmMain
     End Sub
 #Region "File Search and Decode Functions and Subs"
     ''' <summary>
-    ''' Contentses the exist.
+    ''' Content the exist.
     ''' </summary>
     ''' <param name="sContent">Content of the s.</param>
     ''' <param name="sSearchFor">The s search for.</param>
@@ -116,7 +116,7 @@ Public Class FrmMain
         Return bAns
     End Function
     ''' <summary>
-    ''' Contentses the exist regex.
+    ''' Content the exist regex.
     ''' </summary>
     ''' <param name="sContent">Content of the s.</param>
     ''' <param name="sSearchFor">The s search for.</param>
@@ -133,7 +133,7 @@ Public Class FrmMain
     End Function
     ''' <summary>
     ''' Combine the Search strings relating to the selected category and format the string in a Regular expression format
-    ''' Then Compair it to the Contents and return the word/words that matchup in the file.
+    ''' Then Compare it to the Contents and return the word/words that match up in the file.
     ''' </summary>
     ''' <param name="sContents"></param>
     ''' <returns>String</returns>
@@ -510,7 +510,7 @@ Public Class FrmMain
         Dim sPath As String = Replace(Replace(TextBox1.Text, "\", "_", ), ":", "")
         Dim fileName As String = "FileMiner_Results_" & sPath & "_" & curTime & ".csv"
         SaveFileDialog1.FilterIndex = 1
-        SaveFileDialog1.Filter = "Comma Seperated File File (.csv)|*.csv"
+        SaveFileDialog1.Filter = "Comma Separated File File (.csv)|*.csv"
         SaveFileDialog1.Title = "Export Files Found to CSV File"
         SaveFileDialog1.FileName = "filename"
         If SaveFileDialog1.ShowDialog = DialogResult.Cancel Then Exit Sub
