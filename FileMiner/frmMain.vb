@@ -43,6 +43,10 @@ Public Class FrmMain
     ''' </summary>
     Public MyLastFile As String
     ''' <summary>
+    ''' The results path
+    ''' </summary>
+    Public ResultsPath as String
+    ''' <summary>
     ''' The save results filename
     ''' </summary>
     Public SaveResultsFilename As String
@@ -82,8 +86,13 @@ Public Class FrmMain
     ''' Initializes this instance.
     ''' </summary>
     Sub Init()
-        BuggerFile = System.Windows.Forms.Application.StartupPath & "\fileminer.debug.log"
-        ErrorFile = System.Windows.Forms.Application.StartupPath & "\fileminer.err.log"
+
+        Dim logsPath as String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\BurnSoft\FileMiner\logs\"
+        ResultsPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\BurnSoft\FileMiner\Results\"
+        If Not Directory.Exists(logsPath) Then Directory.CreateDirectory(logsPath)
+        If Not Directory.Exists(ResultsPath) Then Directory.CreateDirectory(ResultsPath)
+        BuggerFile = logsPath & "fileminer.debug.log"
+        ErrorFile = logsPath & "fileminer.err.log"
         Usedebug = CBool(ConfigurationManager.AppSettings("DEBUG"))
         Useerror = CBool(ConfigurationManager.AppSettings("ERROR"))
 
@@ -478,7 +487,7 @@ Public Class FrmMain
         Dim curTime As String = Replace(Now.ToLongDateString, ",", "")
         curTime = Replace(curTime, " ", "_")
         Dim sPath As String = Replace(Replace(TextBox1.Text, "\", "_", ), ":", "")
-        Dim fileName As String = System.Windows.Forms.Application.StartupPath & "\FileMiner_Results_" & sPath & "_" & curTime & ".log"
+        Dim fileName As String = ResultsPath & "FileMiner_Results_" & sPath & "_" & curTime & ".log"
         sAns = fileName
         Return sAns
     End Function

@@ -11,7 +11,7 @@ Public Class Database
     ''' </summary>
     ''' <returns></returns>
     Public Function SConnect() As String
-        Dim appPath As String =Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\BurnSoft\FileMiner\" & "\fileminer.mdb"
+        Dim appPath As String =Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\BurnSoft\FileMiner\" & "fileminer.mdb"
         If Not File.Exists(appPath) Then appPath = Application.StartupPath & "\fileminer.mdb"
         Return "Driver={Microsoft Access Driver (*.mdb)};dbq=" & appPath
     End Function
