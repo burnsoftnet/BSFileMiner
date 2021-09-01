@@ -21,13 +21,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_223F83FABD724DA2A261DA8E4B6B19F3"
+        "MsmKey" = "8:_241DB415280F440CB757003F0BF8C64C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_241DB415280F440CB757003F0BF8C64C"
+        "MsmKey" = "8:_3B94B88C9C194E8497CB153C7514E033"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -39,8 +39,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_56552A4780E846B6852C71BDFF9665C2"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_6847363A8326C252C1C5BCDEE12DDBA4"
+        "OwnerKey" = "8:_51C19FBDCDC848EF8CB6CBC7D38E089C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -51,13 +51,19 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9BF3CD55CC464EA19F259720C4711441"
+        "MsmKey" = "8:_75D6DAF37FC2D51C3DD53D5B489B7F8C"
+        "OwnerKey" = "8:_51C19FBDCDC848EF8CB6CBC7D38E089C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8A4A4F7703F646A7B8873780A26F4DB7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A3F1C5A0AFFF479A9CD48C32551F5C6F"
+        "MsmKey" = "8:_9BF3CD55CC464EA19F259720C4711441"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -89,6 +95,48 @@
         {
         "MsmKey" = "8:_E88AA6C85A48441090AF469B62B2DC53"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FF79F7CEB42246D88D152383DD20C760"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3B94B88C9C194E8497CB153C7514E033"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B6D9333F2EB94C979DAC561EBD22E1DF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_51C19FBDCDC848EF8CB6CBC7D38E089C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_75D6DAF37FC2D51C3DD53D5B489B7F8C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6847363A8326C252C1C5BCDEE12DDBA4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0EB23AA508564216846F5DE0E388C6D7"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -148,6 +196,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -185,29 +241,14 @@
             "AssemblyAsmDisplayName" = "8:itextsharp, Version=5.5.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_0EB23AA508564216846F5DE0E388C6D7"
+                    {
+                    "Name" = "8:itextsharp.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\FileMiner\\bin\\Release\\itextsharp.dll"
+            "SourcePath" = "8:..\\FileMiner\\bin\\Release\\itextsharp.dll"
             "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_223F83FABD724DA2A261DA8E4B6B19F3"
-            {
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\Docs\\About the File Miner.pdf"
-            "TargetName" = "8:About the File Miner.pdf"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
             "Condition" = "8:"
@@ -226,8 +267,39 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_241DB415280F440CB757003F0BF8C64C"
             {
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\FileMiner\\bin\\Release\\itextsharp.xml"
+            "SourcePath" = "8:..\\FileMiner\\bin\\Release\\itextsharp.xml"
             "TargetName" = "8:itextsharp.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3B94B88C9C194E8497CB153C7514E033"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_3B94B88C9C194E8497CB153C7514E033"
+                    {
+                    "Name" = "8:DocumentFormat.OpenXml.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\FileMiner\\bin\\Release\\DocumentFormat.OpenXml.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
             "Condition" = "8:"
@@ -248,11 +320,16 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:FileMiner, Version=1.0.4.250, Culture=neutral, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:FileMiner, Version=1.0.6.1, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_51C19FBDCDC848EF8CB6CBC7D38E089C"
+                    {
+                    "Name" = "8:FileMiner.exe"
+                    "Attributes" = "3:512"
+                    }
                 }
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\FileMiner\\bin\\Release\\FileMiner.exe"
+            "SourcePath" = "8:..\\FileMiner\\bin\\Release\\FileMiner.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
@@ -270,10 +347,21 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_56552A4780E846B6852C71BDFF9665C2"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6847363A8326C252C1C5BCDEE12DDBA4"
             {
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\FileMiner\\bin\\Release\\DocumentFormat.OpenXml.xml"
-            "TargetName" = "8:DocumentFormat.OpenXml.xml"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_6847363A8326C252C1C5BCDEE12DDBA4"
+                    {
+                    "Name" = "8:DocumentFormat.OpenXml.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:DocumentFormat.OpenXml.DLL"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
             "Condition" = "8:"
@@ -287,7 +375,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_69DA7A1799504256B7014874CC9B487A"
@@ -310,10 +398,41 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9BF3CD55CC464EA19F259720C4711441"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_75D6DAF37FC2D51C3DD53D5B489B7F8C"
             {
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\FileMiner\\bin\\Release\\FileMiner.exe.config"
-            "TargetName" = "8:FileMiner.exe.config"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:itextsharp, Version=5.5.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_75D6DAF37FC2D51C3DD53D5B489B7F8C"
+                    {
+                    "Name" = "8:itextsharp.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:itextsharp.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8A4A4F7703F646A7B8873780A26F4DB7"
+            {
+            "SourcePath" = "8:..\\FileMiner\\bin\\Release\\DocumentFormat.OpenXml.xml"
+            "TargetName" = "8:DocumentFormat.OpenXml.xml"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
             "Condition" = "8:"
@@ -330,16 +449,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A3F1C5A0AFFF479A9CD48C32551F5C6F"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9BF3CD55CC464EA19F259720C4711441"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                }
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\FileMiner\\bin\\Release\\DocumentFormat.OpenXml.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\FileMiner\\bin\\Release\\FileMiner.exe.config"
+            "TargetName" = "8:FileMiner.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
             "Condition" = "8:"
@@ -383,8 +496,13 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_B6D9333F2EB94C979DAC561EBD22E1DF"
+                    {
+                    "Name" = "8:Microsoft.Office.Interop.Word.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
-            "SourcePath" = "8:\\\\Mac\\Home\\Documents\\Source_Code\\Visual Studio 2015\\Projects\\Beta\\BSFileMiner\\FileMiner\\bin\\Release\\Microsoft.Office.Interop.Word.dll"
+            "SourcePath" = "8:..\\FileMiner\\bin\\Release\\Microsoft.Office.Interop.Word.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
@@ -446,6 +564,26 @@
             {
             "SourcePath" = "8:images\\Setup_Banner.jpg"
             "TargetName" = "8:Setup_Banner.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FF79F7CEB42246D88D152383DD20C760"
+            {
+            "SourcePath" = "8:..\\Docs\\About the File Miner.pdf"
+            "TargetName" = "8:About the File Miner.pdf"
             "Tag" = "8:"
             "Folder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
             "Condition" = "8:"
@@ -695,20 +833,6 @@
             "Folder" = "8:_8B0E9A322B8544F48BF2FBD42BF5CD40"
             "WorkingFolder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
             "Icon" = "8:_69DA7A1799504256B7014874CC9B487A"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_35E4B93524264D54BAAC720B03104A8F"
-            {
-            "Name" = "8:About the File Miner.pdf"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_223F83FABD724DA2A261DA8E4B6B19F3"
-            "Folder" = "8:_206B6D5B593D466081F2ED33353962DE"
-            "WorkingFolder" = "8:_D06701B6A4904259B8F68ACCD61934D0"
-            "Icon" = "8:_C862331C66944A48A5CC31868D164697"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8004744D4ACD46548BB2E274F3F041A9"
